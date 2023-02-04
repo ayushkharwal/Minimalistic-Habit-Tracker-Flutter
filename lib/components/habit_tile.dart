@@ -45,8 +45,9 @@ class HabitTile extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(24),
           decoration: BoxDecoration(
-            color: Colors.orange[200],
-            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: Colors.white),
+            color: Colors.grey[100],
+            borderRadius: BorderRadius.circular(42),
           ),
           child: Row(
             children: [
@@ -54,6 +55,10 @@ class HabitTile extends StatelessWidget {
               Checkbox(
                 value: habitCompleted,
                 onChanged: onChanged,
+                activeColor: Colors.black,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(6),
+                ),
               ),
               // Habit Name
               Text(

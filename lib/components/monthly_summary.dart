@@ -15,18 +15,18 @@ class MonthlySummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 25, bottom: 25),
+      padding: const EdgeInsets.only(bottom: 25),
       child: HeatMap(
         startDate: createDateTimeObject(startDate),
         endDate: DateTime.now().add(Duration(days: 0)),
         datasets: datasets,
         colorMode: ColorMode.color,
         defaultColor: Colors.grey[200],
-        textColor: Colors.white,
+        textColor: Colors.black,
         showColorTip: false,
         showText: true,
         scrollable: true,
-        size: 30,
+        size: 38,
         colorsets: const {
           1: Color.fromARGB(20, 2, 179, 8),
           2: Color.fromARGB(40, 2, 179, 8),

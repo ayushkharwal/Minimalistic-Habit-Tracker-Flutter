@@ -112,44 +112,60 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Today\'s List',
-          style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
+    return Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.white,
+            //Colors.grey.shade400,
+            Colors.blueGrey,
+            Colors.black,
+          ],
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+        ),
+      ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'Minimalistic Habit Tracker',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
           ),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          centerTitle: true,
+          toolbarHeight: 100,
         ),
         backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
-      backgroundColor: Colors.orange[700],
-      floatingActionButton: AddHabitButton(onPressed: AddNewHabit),
-      body: ListView(
-        children: [
-          // Monthly summary heat map
-          MonthlySummary(
-              datasets: db.heatMapDataSet, startDate: _myBox.get('START_DATE')),
+        floatingActionButton: AddHabitButton(onPressed: AddNewHabit),
+        body: ListView(
+          children: [
+            // Monthly summary heat map
+            MonthlySummary(
+                datasets: db.heatMapDataSet,
+                startDate: _myBox.get('START_DATE')),
 
-          // List of Habits
-          ListView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: db.todaysHabitList.length,
-            itemBuilder: (context, index) {
-              return HabitTile(
-                habitName: db.todaysHabitList[index][0],
-                habitCompleted: db.todaysHabitList[index][1],
-                onChanged: (value) => checkBoxTapped(value, index),
-                settingsTapped: (context) => openHabitSettings(index),
-                deleteTapped: (context) => deleteHabit(index),
-              );
-            },
-          ),
-        ],
+            // List of Habits
+            ListView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: db.todaysHabitList.length,
+              itemBuilder: (context, index) {
+                return HabitTile(
+                  habitName: db.todaysHabitList[index][0],
+                  habitCompleted: db.todaysHabitList[index][1],
+                  onChanged: (value) => checkBoxTapped(value, index),
+                  settingsTapped: (context) => openHabitSettings(index),
+                  deleteTapped: (context) => deleteHabit(index),
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
