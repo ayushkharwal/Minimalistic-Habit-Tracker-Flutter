@@ -30,7 +30,7 @@ class HabitTile extends StatelessWidget {
               onPressed: settingsTapped,
               backgroundColor: Colors.black,
               icon: Icons.settings_rounded,
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(40),
             ),
 
             // Delete option
@@ -38,7 +38,7 @@ class HabitTile extends StatelessWidget {
               onPressed: deleteTapped,
               backgroundColor: Colors.red,
               icon: Icons.delete_rounded,
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(40),
             ),
           ],
         ),

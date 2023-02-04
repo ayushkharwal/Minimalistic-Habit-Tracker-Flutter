@@ -31,6 +31,7 @@ class MyAlertBox extends StatelessWidget {
             borderSide: BorderSide(color: Colors.white),
           ),
         ),
+        keyboardType: TextInputType.name,
       ),
       actions: [
         // Save Button
