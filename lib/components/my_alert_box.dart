@@ -19,6 +19,7 @@ class MyAlertBox extends StatelessWidget {
     return AlertDialog(
       backgroundColor: Colors.grey[900],
       content: TextField(
+        textCapitalization: TextCapitalization.words,
         controller: controller,
         style: TextStyle(color: Colors.white),
         decoration: InputDecoration(
@@ -32,6 +33,7 @@ class MyAlertBox extends StatelessWidget {
           ),
         ),
         keyboardType: TextInputType.name,
+        
       ),
       actions: [
         // Save Button

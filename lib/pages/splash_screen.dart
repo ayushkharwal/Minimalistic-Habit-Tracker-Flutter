@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Align(
               alignment: Alignment.bottomCenter,
               child: Text(
-                'To those who strive to stick with good habits... to us i say \'Greatness is Coming \'',
+                'To those who strive to stick with good habits... i say \'Greatness is Coming \'',
                 style: TextStyle(
                   color: Colors.blueGrey,
                   fontSize: 18,
