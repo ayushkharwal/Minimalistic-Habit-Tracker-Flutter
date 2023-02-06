@@ -13,8 +13,6 @@ PS: The app is not on playstore.
 
 ![4](https://user-images.githubusercontent.com/64960113/216940790-1104beb2-6d5a-491b-a732-2319e90d4801.png)
 
-Apk file path - build\app\outputs\flutter-apk
-
 ## Features
 * Add new habits 
 * Track your monthly progress and see how well you're doing with the heat map
