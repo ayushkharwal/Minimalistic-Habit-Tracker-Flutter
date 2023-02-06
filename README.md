@@ -4,13 +4,15 @@ A new Flutter project.
 
 # Output
 
-![1675535236270](https://user-images.githubusercontent.com/64960113/216783786-d4baff62-111f-4620-979d-ce7045595426.jpg)
+![1](https://user-images.githubusercontent.com/64960113/216940580-21088ab9-2d73-401e-a98e-54dd1af4c3bd.png)
+PS: The app is not on playstore yet.
 
-![1675535236266](https://user-images.githubusercontent.com/64960113/216783794-70180832-de36-437b-9706-3a3cda373c9e.jpg)
+![2](https://user-images.githubusercontent.com/64960113/216940719-01091134-c350-4533-bbd0-06bdab717035.png)
 
-![1675535236261](https://user-images.githubusercontent.com/64960113/216783803-74292b34-19c7-401b-aac0-e35c14a015fa.jpg)
+![3](https://user-images.githubusercontent.com/64960113/216940772-7b005fe0-c9ae-4fa3-80c1-c502baac1f25.png)
 
-![1675535512090](https://user-images.githubusercontent.com/64960113/216783820-5c850d08-bb6e-4a6b-8c81-66eea7d1b063.jpg)
+![4](https://user-images.githubusercontent.com/64960113/216940790-1104beb2-6d5a-491b-a732-2319e90d4801.png)
+
 
 ## Getting Started
 
