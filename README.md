@@ -13,16 +13,16 @@ PS: The app is not on playstore yet.
 
 ![4](https://user-images.githubusercontent.com/64960113/216940790-1104beb2-6d5a-491b-a732-2319e90d4801.png)
 
-##Features
+## Features
 Add new habits 
 Track your monthly progress and see how well you're doing with the heat map
 View your progress over time and see how your habits have improved
 
-##Requirements
+## Requirements
 A device with Flutter installed
 Android or iOS operating system
 
-##Usage
+## Usage
 Add a new habit by clicking the "+" button at the bottom
 Enter the habit name 
 Track your progress and see your statistics
@@ -31,7 +31,7 @@ Edit or remove a habit by sliding the habit tile to the left.
 Contributing
 This project is open source and contributions are welcome. If you would like to contribute, please create a pull request.
 
-License
+## License
 This project is licensed under the MIT License.
 
 
